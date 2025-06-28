@@ -1,59 +1,58 @@
-# Anybank
+# AnyBank 🏦
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+Projeto desenvolvido em Angular para simular operações bancárias simples, como depósitos e saques, com foco em boas práticas de arquitetura, reatividade e internacionalização.
 
-## Development server
+## ✨ Funcionalidades
 
-To start a local development server, run:
+- 💸 Cadastro e exibição de transações bancárias (depósitos e saques)
+- 🧮 Cálculo automático do saldo
+- 📝 Formulários dinâmicos com validação
+- 🌐 Suporte a múltiplos idiomas (i18n)
+- ⚡ Interface reativa e responsiva
 
-```bash
-ng serve
-```
+## 📚 Principais conceitos aplicados
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- 🚀 **Criação e gerenciamento de projetos e componentes com Angular CLI**
+- 🔗 **Comunicação entre componentes** usando `@Input` e `@Output`
+- 🎨 **Formatação de dados** com pipes como `DatePipe`, `CurrencyPipe`, `TitleCasePipe` e `KeyValuePipe`
+- 🌍 **Internacionalização (i18n)** para suporte a diferentes idiomas
+- 🔄 **Two-way data binding** com `ngModel` para formulários dinâmicos
+- ⚡ **Reatividade otimizada** com `signals` e `computed`
+- 🆔 **Geração de identificadores únicos** utilizando [nanoid](https://github.com/ai/nanoid)
 
-## Code scaffolding
+## 🚀 Como rodar o projeto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Instale as dependências:
 
-```bash
-ng generate component component-name
-```
+   ```bash
+   npm install
+   ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+2. Rode o servidor de desenvolvimento:
 
-```bash
-ng generate --help
-```
+   ```bash
+   ng serve
+   ```
 
-## Building
+3. Acesse em [http://localhost:4200](http://localhost:4200)
 
-To build the project run:
+## 🗂️ Estrutura do projeto
 
-```bash
-ng build
-```
+- `src/app/modelos`: Modelos de dados (ex: Transacao)
+- `src/app/banner`: Componente de banner
+- `src/app/form-nova-transacao`: Formulário para novas transações
+- `src/app/extrato`: Listagem de transações
+- `src/app/transacao`: Exibição individual de transação
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🛠️ Tecnologias utilizadas
 
-## Running unit tests
+- [Angular](https://angular.io/)
+- [nanoid](https://github.com/ai/nanoid)
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📈 Aprendizados
 
-```bash
-ng test
-```
+Este projeto foi desenvolvido para consolidar conhecimentos em Angular, especialmente sobre reatividade, comunicação entre componentes, formatação de dados e internacionalização.
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Sinta-se à vontade para contribuir ou sugerir melhorias!
