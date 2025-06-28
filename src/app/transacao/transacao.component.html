@@ -1,0 +1,6 @@
+<div class="transacao">
+    <span class="valor" [ngClass]="transacao()?.tipo == tipoTransacao.DEPOSITO ? 'positivo' : 'negativo' ">{{
+        transacao()?.valor | currency:
+        'BRL'}}</span>
+    <span class="data">{{ transacao()?.data | date: 'dd/MM/yyyy' }}</span>
+</div>
